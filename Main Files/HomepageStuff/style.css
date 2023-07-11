@@ -1,0 +1,80 @@
+:root {
+    --size: 0px;
+    --movefar: 0px;
+}
+
+* {
+    color: white;
+}
+
+nav {
+    background-color: powderblue;
+    margin: -8px;
+    height: 30px;
+    margin-top: -7px;
+    overflow: hidden;
+}
+
+.navbtn {
+    position: relative;
+    top: 7px;
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 20px;
+    margin: -3px;
+}
+
+.navbtn:hover, .navbtn:focus {
+    background-color: #98bdc3;
+}
+
+#search {
+    position: relative;
+    top: 7px;
+    margin-left: 20px;
+    color: black;
+    width: 250px;
+}
+
+body {
+    background-color: black;
+}
+
+.btnLink {
+    text-align: middle;
+    text-decoration: none;
+    --size: 0px;
+}
+
+.btnLink:hover {
+    --size: 500px;
+}
+
+.btnLink {
+    position: absolute;
+    left: 50%;
+    --movefar: translate(-50%,0);
+    transform: var(--movefar);
+}
+
+.underline {
+    position: absolute;
+    top: calc(6rem + 1px);
+    left: 50%;
+    transform: var(--movefar);
+    overflow: clip;
+    background-color: white;
+    color: transparent;
+    height: 1px;
+    width: var(--size);
+    transition: width 1s ease-in-out;
+}
+
+.btnLink + .underline {
+    --movefar: translate(-50%,0);
+}
+
+.btnLink:hover + .underline {
+    --size:50px;
+}

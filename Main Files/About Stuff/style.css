@@ -1,0 +1,52 @@
+* {
+    color: white;
+}
+nav {
+    background-color: powderblue;
+    margin: -8px;
+    height: 30px;
+    margin-top: -7px;
+    overflow: hidden;
+}
+
+.navbtn {
+    position: relative;
+    top: 7px;
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 20px;
+    margin: -3px;
+}
+
+.navbtn:hover, .navbtn:focus {
+    background-color: #98bdc3;
+}
+
+#search {
+    position: relative;
+    top: 7px;
+    margin-left: 20px;
+    color: black;
+    width: 250px;
+}
+
+body {
+    background-color: black;
+}
+
+.btnLink {
+    text-align: middle;
+}
+
+.container {
+    transform: rotateY(0deg);
+    background-color: rgba(62,125,23,0.6);
+    width: 100%;
+    padding: 15px;
+    transition: transform 1s linear;
+}
+
+.container:hover {
+    transform: rotateY(180deg);
+}
